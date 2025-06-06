@@ -109,12 +109,12 @@ resource "aws_sns_topic" "email_topic" {
   name = "email-notifications"
 }
 
-/* subscribe lambda to SNS topic 
-resource "aws_sns_topic_subscription" "lambda_subscription" {
-    topic_arn = aws_sns_topic.notification_topic.arn
-    protocol = "lambda"
-    endpoint = aws_lambda_function.lambda.arn
-}*/
+// subscribe lambda to SNS topic 
+//resource "aws_sns_topic_subscription" "lambda_subscription" {
+//    topic_arn = aws_sns_topic.notification_topic.arn
+//    protocol = "lambda"
+//    endpoint = aws_lambda_function.lambda.arn
+//}
 
 // adding email so SNS send email to me 
 resource "aws_sns_topic_subscription" "email_subscription" {
