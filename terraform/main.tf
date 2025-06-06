@@ -4,7 +4,7 @@ provider "aws" {
 
 // creating the s3 bucket 
 resource "aws_s3_bucket" "email_notif" {
-    bucket = "email-notif-bucket"
+    bucket = "email-notif-bucket-340239940"
 }
 
 // creating the lambda function
